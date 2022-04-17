@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Environment name="backup.source" value="source path" type="java.lang.String"/>
+    <Environment name="backup.destination" value="destination path" type="java.lang.String"/>
+</Context>

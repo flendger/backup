@@ -1,1 +1,7 @@
-
+server:
+  port: 8080
+  servlet:
+    context-path: /backup
+backup:
+  source: /source_path
+  destination: /destination_path
