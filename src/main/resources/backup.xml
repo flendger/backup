@@ -2,4 +2,6 @@
 <Context>
     <Environment name="backup.source" value="source path" type="java.lang.String"/>
     <Environment name="backup.destination" value="destination path" type="java.lang.String"/>
+    <Environment name="backup.username" value="destination path" type="java.lang.String"/>
+    <Environment name="backup.password" value="destination path" type="java.lang.String"/>
 </Context>

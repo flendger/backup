@@ -1,4 +1,4 @@
-package ru.keeppas.backup;
+package ru.keeapps.backup;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

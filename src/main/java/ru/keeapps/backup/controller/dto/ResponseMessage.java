@@ -1,10 +1,14 @@
-package ru.keeppas.backup.controller.dto;
+package ru.keeapps.backup.controller.dto;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 @AllArgsConstructor
+@Getter
+@Setter
 public class ResponseMessage {
     private String message;
     private int status;

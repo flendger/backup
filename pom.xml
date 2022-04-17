@@ -8,9 +8,9 @@
 		<version>2.6.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>ru.keeppas</groupId>
+	<groupId>ru.keeapps</groupId>
 	<artifactId>backup</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>war</packaging>
 	<name>backup</name>
 	<description>Back up current snapshot to archive directory</description>

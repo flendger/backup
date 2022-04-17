@@ -5,3 +5,5 @@ server:
 backup:
   source: /source_path
   destination: /destination_path
+  username: user
+  password: pass

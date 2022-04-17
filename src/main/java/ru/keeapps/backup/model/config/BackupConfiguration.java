@@ -1,4 +1,4 @@
-package ru.keeppas.backup.model;
+package ru.keeapps.backup.model.config;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package ru.keeppas.backup;
+package ru.keeapps.backup;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

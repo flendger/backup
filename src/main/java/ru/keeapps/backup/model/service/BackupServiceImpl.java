@@ -1,10 +1,10 @@
-package ru.keeppas.backup.model.service;
+package ru.keeapps.backup.model.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import ru.keeppas.backup.model.BackupConfiguration;
-import ru.keeppas.backup.model.factory.SnapshotFileNameFactory;
+import ru.keeapps.backup.model.factory.SnapshotFileNameFactory;
+import ru.keeapps.backup.model.config.BackupConfiguration;
 
 import java.io.IOException;
 import java.nio.file.*;
@@ -58,8 +58,9 @@ public class BackupServiceImpl implements BackupService {
     }
 
     private void logAndThrowException(Exception exception) throws Exception {
-        log.error(exception.getMessage(), exception);
-        throw exception;
+        Exception resException = new Exception(exception);
+        log.error(resException.getMessage(), resException);
+        throw resException;
     }
 
     private void createDestinationDirectory(Path destination) throws IOException {

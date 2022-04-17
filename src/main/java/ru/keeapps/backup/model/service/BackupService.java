@@ -1,4 +1,4 @@
-package ru.keeppas.backup.model.service;
+package ru.keeapps.backup.model.service;
 
 public interface BackupService {
     void backup() throws Exception;
