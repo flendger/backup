@@ -42,6 +42,8 @@ public class SnapshotFileNameFactoryImpl implements SnapshotFileNameFactory {
                     .append(extension);
         }
 
-        return nameBuilder.toString();
+        return nameBuilder
+                .toString()
+                .replace(":", "_");
     }
 }
