@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>ru.keeapps</groupId>
 	<artifactId>backup</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<packaging>war</packaging>
 	<name>backup</name>
 	<description>Back up current snapshot to archive directory</description>

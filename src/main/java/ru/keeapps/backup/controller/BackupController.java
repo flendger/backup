@@ -29,11 +29,12 @@ public class BackupController {
         }
 
         try {
-            backupService.backup();
+            String destinationFile = backupService.backup();
+
+            return ResponseMessage.create("Backup completed: " + destinationFile, HttpStatus.OK);
         } catch (Exception e) {
             return ResponseMessage.create(message(e), HttpStatus.NOT_FOUND);
         }
-        return ResponseMessage.create("Backup completed", HttpStatus.OK);
     }
 
     private String message(Exception e) {

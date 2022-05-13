@@ -17,7 +17,7 @@ public class BackupServiceImpl implements BackupService {
     private final SnapshotFileNameFactory fileNameFactory;
 
     @Override
-    public void backup() throws Exception {
+    public String backup() throws Exception {
         Path source = Paths.get(backupConfiguration.getSource());
         checkSource(source);
 
@@ -30,8 +30,11 @@ public class BackupServiceImpl implements BackupService {
             Path destinationFile = Paths.get(destination.toAbsolutePath().toString(), newFileName);
 
             Files.copy(source, destinationFile, StandardCopyOption.REPLACE_EXISTING);
-        } catch (IOException e) {
+
+            return destinationFile.toString();
+        } catch (Exception e) {
             logAndThrowException(e);
+            return "";
         }
     }
 
@@ -46,7 +49,7 @@ public class BackupServiceImpl implements BackupService {
 
         if (!Files.isDirectory(destination)) {
             logAndThrowException(
-                    new IOException(String.format("Destination is not directory: %s", backupConfiguration.getDestination())));
+                    new IOException(String.format("Destination is not a directory: %s", backupConfiguration.getDestination())));
         }
     }
 
